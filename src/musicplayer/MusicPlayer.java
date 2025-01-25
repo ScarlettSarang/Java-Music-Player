@@ -3,7 +3,6 @@ package musicplayer;
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.*;
 import java.util.ArrayList;
 import javax.sound.sampled.*;
@@ -11,16 +10,16 @@ import javax.sound.sampled.*;
 public class MusicPlayer extends JFrame 
 {
 
-    private JLabel titleLabel;
-    private JLabel timeLabel;
+    private final JLabel titleLabel;
+    private final JLabel timeLabel;
     private JSlider slider;
-    private JButton playButton, pauseButton, nextButton, prevButton, loopButton;
+    private final JButton playButton, pauseButton, nextButton, prevButton, loopButton;
     private boolean isPlaying = false;
     private boolean isPaused = false;
     private boolean isLooping = false;
     private Clip clip;
     private javax.swing.Timer sliderTimer; // Fully qualified name to avoid ambiguity
-    private ArrayList<File> playlist = new ArrayList<>();
+    private final ArrayList<File> playlist = new ArrayList<>();
     private int currentTrackIndex = 0;
 
     public MusicPlayer() 
