@@ -223,7 +223,7 @@ public class MusicPlayer extends JFrame
         loopButton.setText(isLooping ? "Loop: ON" : "Loop: OFF");
     }
 
-    // Member 1 - Update the slider and time label
+    // Member 3 - Update the slider and time label
     private void updateSlider() 
     {
         if (clip != null && clip.isRunning()) 
@@ -234,7 +234,7 @@ public class MusicPlayer extends JFrame
         }
     }
 
-    // Member 1 - Format time for display
+    // Member 3 - Format time for display
     private String formatTime(long seconds) 
     {
         long mins = seconds / 60;
