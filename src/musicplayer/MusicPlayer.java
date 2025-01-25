@@ -70,9 +70,10 @@ public class MusicPlayer extends JFrame
 
         add(controlPanel, BorderLayout.SOUTH);
 
+        // Member 4 - Option to load playlist folder
         JMenuBar menuBar = new JMenuBar();
         JMenu fileMenu = new JMenu("Load Playlist");
-        JMenuItem openFolder = new JMenuItem("Open Folder"); // Member 4 - Option to load playlist folder
+        JMenuItem openFolder = new JMenuItem("Open Folder"); 
         fileMenu.add(openFolder);
         menuBar.add(fileMenu);
         setJMenuBar(menuBar);
